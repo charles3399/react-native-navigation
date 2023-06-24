@@ -23,7 +23,7 @@ export default function MealInstructionItem(props) {
     console.log("SELECTOR", favoriteMealIds)
 
     const dataInstruction = (itemData, bulletStyle) => {
-        return itemData.map(name => <Text style={styles.content}>{bulletStyle} {name}</Text>)
+        return itemData.map((name, key) => <Text key={key} style={styles.content}>{bulletStyle} {name}</Text>)
     }
 
     // console.log("CONTEXT", faveMealContext)
